@@ -352,7 +352,6 @@ aside {
   }
 
   /*Header*/
-
   header {
     padding: 33px 0;
   }
@@ -377,7 +376,6 @@ aside {
   /*Hero Area*/
 
   /*Aside*/
-
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -392,7 +390,6 @@ aside {
   }
 
   /*Features*/
-
   .features article {
     display: flex;
     align-items: center;
@@ -405,7 +402,6 @@ aside {
   }
 
   /*Reviews*/
-
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -416,7 +412,6 @@ aside {
   }
 
   /*Footer*/
-
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
@@ -476,6 +471,58 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles here */
+  /*General Styles*/
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /*Header*/
+  header {
+    padding: 15px 0;
+  }
+
+  /*Hero Area*/
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /*Aside*/
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /*Features*/
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /*Reviews*/
+  .reviews article div {
+    width: 42%;
+  }
+
+
+  /*================================= About Page =======================*/
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /*================================== FAQ Page ==========================*/
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 
