@@ -102,6 +102,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -113,6 +115,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -162,6 +165,10 @@ header .content-wrapper {
   margin: 0px;
 }
 
+header figure {
+  width: 60%;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
@@ -180,7 +187,6 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding-left: 0;
 }
 
 header nav ul li {
@@ -214,9 +220,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -287,13 +301,6 @@ input[type=button] {
   justify-content: center;
 }
 
-.features i {
-  font-size: 3.75em;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-}
-
 .features h2 {
   margin-bottom: 60px;
 }
@@ -308,6 +315,11 @@ input[type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -344,7 +356,7 @@ input[type=button] {
 .map figure {
   width: 100%;
   height: 0;
-  padding-bottom: 75%;
+  padding-bottom: 125%;
   overflow: hidden;
   position: relative;
 }
@@ -569,7 +581,11 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 60%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /*Reviews*/
@@ -588,7 +604,7 @@ input[type=button] {
   }
 
   .reviews h3 {
-    width: 55%;
+    width: 65%;
     margin: 0;
   }
 
@@ -616,6 +632,11 @@ input[type=button] {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -659,6 +680,10 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
   }
 
   /*================================== FAQ Page ==========================*/
